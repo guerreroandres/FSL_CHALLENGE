@@ -30,5 +30,9 @@ jobs:
       run: npm install
     - name: lint
       run: npm run lint
+    - name: prettier install
+      run: npm install --save-dev --save-exact prettier
+    - name: prettier run
+      run: npm run prettier
 #    - run: npm run build --if-present
 #    - run: npm test
